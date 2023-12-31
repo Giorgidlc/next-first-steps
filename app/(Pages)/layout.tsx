@@ -1,5 +1,5 @@
 
-export default function AboutLayout({
+export default function PublicLayout({
  children
 }: {
  children: React.ReactNode;
