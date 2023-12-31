@@ -1,3 +1,4 @@
+import { Navbar } from "@/components";
 
 export default function PublicLayout({
  children
@@ -5,9 +6,12 @@ export default function PublicLayout({
  children: React.ReactNode;
 }) {
   return (
-    <div>
+    <>
+    <Navbar />
+    <main>
       <h1>Hello Root Layout Root Name</h1>
       { children }
-    </div>
+    </main>
+    </>
   );
 }
