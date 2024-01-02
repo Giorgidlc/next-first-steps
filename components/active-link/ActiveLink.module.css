@@ -1,0 +1,11 @@
+.navLink {
+  color: orangered;
+}
+
+.navLink:hover {
+  color: blue;
+}
+
+.active-navLink {
+  color: green;
+}

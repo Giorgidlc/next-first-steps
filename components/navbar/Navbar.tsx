@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { ActiveLink } from "@/components"
 
 const navItems = [
   { path: '/about', text: 'About' },
@@ -11,7 +12,7 @@ export const Navbar = () => {
     <nav><Link href={'/'}>Navbar component</Link>
       {
         navItems.map(navItems => (
-          <Link key={navItems.path} href={navItems.path}>{ navItems.text}</Link>
+          <ActiveLink key={navItems.path} {...navItems} />
         ))
      }
     </nav>
